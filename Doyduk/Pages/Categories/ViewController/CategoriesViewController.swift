@@ -105,5 +105,12 @@ extension CategoriesViewController: UITableViewDataSource, UITableViewDelegate {
         return 66
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let products = ProductsViewController()
+        products.categoryName = categories[indexPath.row].name
+        self.navigationController?.pushViewController(products, animated: true)
+    }
     
 }
