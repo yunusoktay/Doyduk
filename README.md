@@ -6,7 +6,7 @@ Menu Application
 * [MVC](https://www.raywenderlich.com/1000705-model-view-controller-mvc-in-ios-a-modern-approach)
 * [Kingfisher](https://github.com/onevcat/Kingfisher)
 * [UIKit](https://developer.apple.com/documentation/uikit)
-* URLSession, JSON
+* URLSession
 * Swift Package Manager
 
 
