@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CategoryTableViewCell: UITableViewCell {
     
@@ -24,5 +25,9 @@ class CategoryTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    
+    func configure(with category: Category) {
+        prefixLabel.text = category.prefix
+        nameLabel.text = category.name
+        logoImageView.kf.setImage(with: category.imageUrl)
+    }
 }

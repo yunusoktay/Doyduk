@@ -175,7 +175,7 @@
                     <navigationItem key="navigationItem" id="kvC-ai-l61"/>
                     <connections>
                         <outlet property="favoriteCategoryImageView" destination="rb1-BO-cPb" id="lyd-eQ-YeX"/>
-                        <outlet property="favoriteCategoryLabel" destination="P2I-N5-D5Z" id="Xql-Tb-gT6"/>
+                        <outlet property="favoriteCategoryLabel" destination="w8U-E7-7v4" id="lQb-SD-AE8"/>
                         <outlet property="favoriteProductTitleLabel" destination="wDL-eE-yO6" id="7m4-0e-eZ0"/>
                         <outlet property="tableView" destination="2Iy-xx-nU7" id="KoN-Xl-Uz7"/>
                     </connections>

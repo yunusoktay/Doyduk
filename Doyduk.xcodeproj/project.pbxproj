@@ -17,6 +17,10 @@
 		8000AA9F27E4A2F200EA41A4 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8000AA9D27E4A2F200EA41A4 /* CategoryTableViewCell.swift */; };
 		8000AAA027E4A2F200EA41A4 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8000AA9E27E4A2F200EA41A4 /* CategoryTableViewCell.xib */; };
 		80D2EF8627E4D3C1008CD3D7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 80D2EF8527E4D3C1008CD3D7 /* Kingfisher */; };
+		80D2EF8A27E4D58D008CD3D7 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D2EF8927E4D58D008CD3D7 /* Service.swift */; };
+		80D2EF8C27E4D5F6008CD3D7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D2EF8B27E4D5F6008CD3D7 /* Category.swift */; };
+		80D2EF8E27E4D682008CD3D7 /* CategoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D2EF8D27E4D682008CD3D7 /* CategoriesResponse.swift */; };
+		80D2EF9027E5B158008CD3D7 /* FavoriteProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D2EF8F27E5B158008CD3D7 /* FavoriteProduct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		8000AA9B27E499E600EA41A4 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		8000AA9D27E4A2F200EA41A4 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		8000AA9E27E4A2F200EA41A4 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		80D2EF8927E4D58D008CD3D7 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		80D2EF8B27E4D5F6008CD3D7 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		80D2EF8D27E4D682008CD3D7 /* CategoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesResponse.swift; sourceTree = "<group>"; };
+		80D2EF8F27E5B158008CD3D7 /* FavoriteProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProduct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +77,6 @@
 				8000AA9227E42CAA00EA41A4 /* Pages */,
 				8000AA9127E42C7A00EA41A4 /* Resources */,
 				8000AA9027E42C5800EA41A4 /* Storyboards */,
-				8000AA8527E42A7000EA41A4 /* Assets.xcassets */,
 				8000AA8A27E42A7000EA41A4 /* Info.plist */,
 			);
 			path = Doyduk;
@@ -87,6 +94,7 @@
 		8000AA9127E42C7A00EA41A4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8000AA8527E42A7000EA41A4 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -103,6 +111,8 @@
 		8000AA9327E42CB900EA41A4 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				80D2EF8727E4D56B008CD3D7 /* Service */,
+				80D2EF8827E4D574008CD3D7 /* Responses */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -148,6 +158,24 @@
 				8000AA9E27E4A2F200EA41A4 /* CategoryTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		80D2EF8727E4D56B008CD3D7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				80D2EF8927E4D58D008CD3D7 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		80D2EF8827E4D574008CD3D7 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				80D2EF8B27E4D5F6008CD3D7 /* Category.swift */,
+				80D2EF8D27E4D682008CD3D7 /* CategoriesResponse.swift */,
+				80D2EF8F27E5B158008CD3D7 /* FavoriteProduct.swift */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,11 +256,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D2EF8E27E4D682008CD3D7 /* CategoriesResponse.swift in Sources */,
 				8000AA9927E42D5B00EA41A4 /* LoginViewController.swift in Sources */,
+				80D2EF9027E5B158008CD3D7 /* FavoriteProduct.swift in Sources */,
 				8000AA7D27E42A6F00EA41A4 /* AppDelegate.swift in Sources */,
 				8000AA9C27E499E600EA41A4 /* CategoriesViewController.swift in Sources */,
 				8000AA7F27E42A6F00EA41A4 /* SceneDelegate.swift in Sources */,
 				8000AA9F27E4A2F200EA41A4 /* CategoryTableViewCell.swift in Sources */,
+				80D2EF8A27E4D58D008CD3D7 /* Service.swift in Sources */,
+				80D2EF8C27E4D5F6008CD3D7 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
